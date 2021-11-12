@@ -17,3 +17,16 @@
   color: #cddc39;
   border: 1px solid #cddc39;
 }
+
+.button-link {
+  text-decoration: none;
+  color: #010101;
+  width: 100%;
+}
+.button-link:hover,
+.button-link:active {
+  background-color: #010101;
+  color: #cddc39;
+  outline: none;
+  border: 1px solid #cddc39;
+}
