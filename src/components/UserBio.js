@@ -1,7 +1,8 @@
+import './UserCard.css';
 const UserBio = ({ userBio }) => {
   return (
     <div>
-      <p>{userBio}</p>
+      <h5>{userBio}</h5>
     </div>
   );
 };

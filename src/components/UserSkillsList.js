@@ -1,11 +1,12 @@
 import UserSkill from './UserSkill';
+import './UserCard.css';
 
 const UserSkillsList = ({ skills }) => {
-  console.log(skills);
+  const topSkills = [...skills].sort((a, b) => b.weight - a.weight).slice(0, 3);
   return (
-    <div>
-      {skills.map((skill) => (
-        <UserSkill key={skill.name} skill={skill} />
+    <div className='skill-container'>
+      {topSkills.map((skill, idx) => (
+        <UserSkill key={idx + skill.name} skill={skill} />
       ))}
     </div>
   );

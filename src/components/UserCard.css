@@ -1,0 +1,59 @@
+.container {
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card {
+  background-color: #27292d;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  width: 325px;
+  margin: 10px 10px;
+  transition: box-shadow 200ms ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.user-details {
+  text-align: center;
+  color: #eee;
+}
+
+.skill-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  text-align: center;
+  border: 1px solid #cddc39;
+  background-color: #010101;
+  color: #cddc39;
+  border-radius: 100px;
+  padding: 10px 10px;
+  margin-right: 13px;
+  margin-left: -1px;
+  margin-bottom: 10px;
+}

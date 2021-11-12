@@ -1,9 +1,7 @@
+import './UserCard.css';
+
 const UserImage = ({ userImage }) => {
-  return (
-    <div>
-      <img src={userImage} alt='user' height='50px' width='50px' />
-    </div>
-  );
+  return <img className='user-img' src={userImage} alt='user' />;
 };
 
 export default UserImage;

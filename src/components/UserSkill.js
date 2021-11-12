@@ -1,9 +1,5 @@
 const UserSkill = ({ skill }) => {
-  return (
-    <div>
-      <p>{skill.name}</p>
-    </div>
-  );
+  return <div className='skill'>{skill.name}</div>;
 };
 
 export default UserSkill;

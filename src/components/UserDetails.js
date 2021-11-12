@@ -4,7 +4,7 @@ import UserSkillsList from './UserSkillsList';
 
 const UserDetails = ({ name, userBio, skills }) => {
   return (
-    <div>
+    <div className='user-details'>
       <UserName name={name} />
       <UserBio userBio={userBio} />
       <UserSkillsList skills={skills} />
