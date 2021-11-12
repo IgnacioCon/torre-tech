@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import UserCardList from './components/UserCardList';
 import UserProfile from './components/UserProfile';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -29,7 +30,10 @@ function App() {
 
   return (
     <div className='App'>
-      <UserCardList users={users} />
+      <Routes>
+        <Route path='/' element={<UserCardList users={users} />} />
+        <Route path='/profile' element={<UserProfile />} />
+      </Routes>
     </div>
   );
 }

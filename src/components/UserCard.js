@@ -12,7 +12,7 @@ const UserCard = ({ user }) => {
         userBio={user.professionalHeadline}
         skills={user.skills}
       />
-      <ViewButton />
+      <ViewButton user={user} />
     </div>
   );
 };
