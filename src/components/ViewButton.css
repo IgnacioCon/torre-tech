@@ -1,0 +1,19 @@
+.view-button {
+  background-color: #cddc39;
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: #010101;
+  border: 1px solid #010101;
+  border-radius: 100px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.view-button:hover,
+.view-button:active {
+  background-color: #010101;
+  color: #cddc39;
+  border: 1px solid #cddc39;
+}
